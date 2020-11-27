@@ -1,0 +1,190 @@
+/*bloc code postal*/
+.form-control-code {
+    display: inline-flex;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.78571;
+    color: #888888;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+
+/*bloc ville*/
+.form-control-ville {
+    display: inline-flex;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.78571;
+    color: #888888;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+
+input.form-control-code {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    box-shadow: none;
+    border-radius: 0;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+input.form-control-ville {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    box-shadow: none;
+    border-radius: 0;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+input.form-control-code:hover, input.form-control-code:focus {
+    background-color: #97ae76;
+    color: #fff;
+}
+input.form-control-ville:hover, input.form-control-ville:focus {
+    background-color: #97ae76;
+    color: #fff;
+}
+.form-group-margin {
+    margin-top: 50px;
+}
+/*supprimer compte color*/
+.del_account {
+    color: red !important;
+    font-size: 12px;
+}
+.modal_button {
+  margin: 0 50px;
+}
+.bienvenue {
+    color:#afb1b3;
+    display: inline;
+    padding: 10px 25px;
+    cursor: default;
+}
+
+.caption {
+  height: 120px;
+}
+/*tilte accuiel*/
+
+.title {
+    color: white;
+    font-size: 150px;
+    position: absolute;
+    left: 36%;
+    top:50%;
+    z-index: 1000;
+}
+
+.tomato {
+    position: relative;
+  
+}
+.team {
+  font-weight: bolder;
+  font-size: 4em;
+}
+/*******shop-cart********/
+
+.bouton-commander{
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.commande {
+    color: #275E0D;
+}
+.bouton-update{
+    padding: 5px;
+    
+} 
+
+
+
+/*******validation*******/
+
+.text-validation {
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+}
+
+.message {
+    margin-bottom: 5%;
+
+}
+.margin_modal {
+  margin-bottom: 2%;
+}
+
+.adresse {
+    width: 100%;
+}
+
+.adresse_t {
+   
+    background-color: #D5EBCE;
+}
+
+/******checkout adresse*****/
+.livraison_add {
+   
+    width: 60%;
+}
+.add_panel {
+    padding-left: 13px;
+    padding-top: 13px;
+}
+
+.adtitle {
+    font-size: 2em;
+    
+    width: 30%;
+    text-align: center;
+    
+    background-color: #D5EBCE;
+
+}
+
+.choix {
+    margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+    .title {
+ 
+    color: white;
+    font-size: 10em;
+    position: absolute;
+    left: 25%;
+    top:50%;
+    z-index: 1000;
+}
+.bouton-commander{
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+    
+}
+
+}
+
+@media (max-width: 415px) {
+    .title {
+ 
+    color: white;
+    font-size: 6em;
+    position: absolute;
+    left: 25%;
+    top:50%;
+    z-index: 1000;
+}
+
+
+
+.woocommerce .woocommerce-cart-form .woocommerce-cart-table tbody tr td {
+    height: auto;
+}
+}

@@ -1,0 +1,10 @@
+.categories {
+  position: relative;
+  top: 100px;
+}
+.categorie_checkbox ~ .categorie_checkbox {
+  margin-left: 105px;
+}
+.image_pro {
+  height: 100px;
+}
