@@ -1,2 +1,2 @@
 # e-store-
-Formation AFPA 
+Travail en équipe à la fin de formation. Database:MySQL WAMP 
