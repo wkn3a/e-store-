@@ -6,9 +6,9 @@
   if ($account_delete) {
 
     unset($_SESSION["user"]);
-    header ("Location: index?module=accueil&action=index&notif=deleteok");
+    header ("Location: index.php?module=accueil&action=index&notif=deleteok");
 
   } else {
 
-    header ("Location: index?module=utilisateur&action=account&notif=deletenok");
+    header ("Location: index.php?module=utilisateur&action=account&notif=deletenok");
   }

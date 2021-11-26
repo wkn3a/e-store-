@@ -5,7 +5,7 @@
             <div class="card-header">
               <i class="fas fa-table"></i>
               Liste des modes de livraison
-              <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=livraison_modes_ajouter" role="button">Ajouter</a>
+              <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=livraison_modes_ajouter" role="button">Ajouter</a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -23,7 +23,7 @@
                       <td><?= $livraison_mode['typ_log_descr'] ?></td>
                       <td><?= $livraison_mode['typ_log_price'] ?> &euro;</td>
                       <td>
-                        <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=livraison_modes_modifier&id=<?= $livraison_mode['typ_log_id'] ?>">Modifier</a>
+                        <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=livraison_modes_modifier&id=<?= $livraison_mode['typ_log_id'] ?>">Modifier</a>
                         <br>
                         <a class="btn btn-outline-dark rounded-pill mt-3" href="#" data-typ_log_descr="<?= $livraison_mode['typ_log_descr'] ?>" data-typ_log_id="<?= $livraison_mode['typ_log_id'] ?>" data-toggle="modal" data-target="#supprimer_livraison_mode">Supprimer</a>
                       </td>
@@ -53,7 +53,7 @@
               </div>
               <div class="modal-body">Confirmez la suppression du mode de livraison</div>
               <div class="modal-footer">
-                <form action="index?module=bdd&action=supprimer_livraison_mode" method="post">
+                <form action="index.php?module=bdd&action=supprimer_livraison_mode" method="post">
                   <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
                   <button class="btn btn-outline-dark rounded-pill">Confirmer</button>
                   <input type="hidden" class="typ_log_id" name="typ_log_id" value="">

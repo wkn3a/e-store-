@@ -1,6 +1,6 @@
             <?php include("../app/view/layout/header.inc.php"); ?>
             <li class="breadcrumb-item active">
-              <a class="text-dark" href="index?module=dashboard&action=commandes">Commandes</a>
+              <a class="text-dark" href="index.php?module=dashboard&action=commandes">Commandes</a>
             </li>
             <li class="breadcrumb-item active">Détail d'une commande</li>
           </ol>

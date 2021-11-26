@@ -18,7 +18,7 @@
           <div class="login-wrapper">
             <div class="row">
               <h3>S'enregistrer</h3>
-              <form method="post" action="index?module=utilisateur&action=register">
+              <form method="post" action="index.php?module=utilisateur&action=register">
                 <div class="form-group organic-form-2">
                   <label>Votre nom (*)</label>
                   <input name="cus_lastname" class="form-control" type="text" required>

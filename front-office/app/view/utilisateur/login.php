@@ -22,7 +22,7 @@
           <div class="login-wrapper">
             <div class="row">
               <h3>Se connecter</h3>
-              <form method="post" action="index?module=utilisateur&action=login">
+              <form method="post" action="index.php?module=utilisateur&action=login">
                 <div class="form-group organic-form-2">
                   <label>Votre e-mail (*)</label>
                   <input name="cus_mail" class="form-control" type="email" required>

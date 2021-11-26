@@ -10,7 +10,7 @@
         <div class="container">
           <div class="woocommerce">
             <div class="row">
-              <form class="woocommerce-checkout" method="post" action="index?module=commande&action=validation_commande">
+              <form class="woocommerce-checkout" method="post" action="index.php?module=commande&action=validation_commande">
                 <div class="woocommerce-checkout-review-order">
                   <h4>Votre commande</h4>
                   <table class="woocommerce-checkout-review-order-table">

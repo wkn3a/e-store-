@@ -5,5 +5,5 @@
     include ("../app/model/commande/panier_supp.php");
     $panier_suppr = panier_supp($_SESSION["user"]["cus_id"]);
     
-    header ("Location: index?module=produit&action=index");
+    header ("Location: index.php?module=produit&action=index");
   }

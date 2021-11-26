@@ -13,7 +13,7 @@
     include ("../app/model/utilisateur/account_update.php");
     $account_update = account_update($_POST);
     
-    header ("Location: index?module=utilisateur&action=account"); 
+    header ("Location: index.php?module=utilisateur&action=account"); 
   }
   
   define ("PAGE_TITLE", "Mon compte");

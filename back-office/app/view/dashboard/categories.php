@@ -5,7 +5,7 @@
             <div class="card-header">
               <i class="fas fa-table"></i>
               Liste des catégories
-              <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=categories_ajouter" role="button">Ajouter</a>
+              <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=categories_ajouter" role="button">Ajouter</a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -23,7 +23,7 @@
                       <td><img src="<?= $categorie['cat_img_url'] ?>" style="height: 100px;" alt=""></td>
                       <td><?= $categorie['cat_descr'] ?></td>
                       <td>
-                        <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=categories_modifier&id=<?= $categorie['cat_id'] ?>">Modifier</a>
+                        <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=categories_modifier&id=<?= $categorie['cat_id'] ?>">Modifier</a>
                         <br>
                         <a class="btn btn-outline-dark rounded-pill mt-3" href="#" data-cat_descr="<?= $categorie['cat_descr'] ?>" data-cat_id="<?= $categorie['cat_id'] ?>" data-toggle="modal" data-target="#supprimer_categorie">Supprimer</a>
                       </td>
@@ -53,7 +53,7 @@
               </div>
               <div class="modal-body">Confirmez la suppression de la catégorie</div>
               <div class="modal-footer">
-                <form action="index?module=bdd&action=supprimer_categorie" method="post">
+                <form action="index.php?module=bdd&action=supprimer_categorie" method="post">
                   <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
                   <button class="btn btn-outline-dark rounded-pill">Confirmer</button>
                   <input type="hidden" class="cat_id" name="cat_id" value="">

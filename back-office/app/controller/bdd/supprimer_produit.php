@@ -1,7 +1,7 @@
 <?php
 
   if (!isset($_SESSION["user"])) {
-    header ("Location: index?module=admin&action=login");
+    header ("Location: index.php?module=admin&action=login");
   } else {
     if (!($_SESSION["user"]["cus_id"] >= 1 && $_SESSION["user"]["cus_id"] <= 4)) {
       die ("Pas d'bol, pas admin !");
@@ -16,7 +16,7 @@
     include ("../app/model/produit/supprimer_produit.php");
     $supprimer_produit = supprimer_produit($_POST["pro_id"]);
     
-    header ("Location: index?module=dashboard&action=produits&notif=ok");  
+    header ("Location: index.php?module=dashboard&action=produits&notif=ok");  
   } else {
-    header ("Location: index?module=dashboard&action=produits&notif=nok");
+    header ("Location: index.php?module=dashboard&action=produits&notif=nok");
   }

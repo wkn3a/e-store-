@@ -14,10 +14,10 @@
       
       $_SESSION["user"] = $user;
       
-      header ("Location: index?notif=logok");
+      header ("Location: index.php?notif=logok");
       
     } else {
       
-      header ("Location: index?module=utilisateur&action=login&notif=lognok");
+      header ("Location: index.php?module=utilisateur&action=login&notif=lognok");
     }
   }

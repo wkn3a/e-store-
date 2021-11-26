@@ -5,7 +5,7 @@
             <div class="card-header">
               <i class="fas fa-table"></i>
               Liste des produits
-              <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=produits_ajouter" role="button">Ajouter</a>
+              <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=produits_ajouter" role="button">Ajouter</a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -40,7 +40,7 @@
                       <td><?= $produit['pro_price'] ?> &euro;</td>
                       <td><?= $produit['pro_date'] ?></td>
                       <td>
-                        <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=produits_modifier&id=<?= $produit['pro_id'] ?>">Modifier</a>
+                        <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=produits_modifier&id=<?= $produit['pro_id'] ?>">Modifier</a>
                         <br>
                         <a class="btn btn-outline-dark rounded-pill mt-3" href="#" data-pro_title="<?= $produit['pro_title'] ?>" data-pro_id="<?= $produit['pro_id'] ?>" data-toggle="modal" data-target="#supprimer_produit">Supprimer</a>
                       </td>
@@ -75,7 +75,7 @@
               </div>
               <div class="modal-body">Confirmez la suppression du produit</div>
               <div class="modal-footer">
-                <form action="index?module=bdd&action=supprimer_produit" method="post">
+                <form action="index.php?module=bdd&action=supprimer_produit" method="post">
                   <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
                   <button class="btn btn-outline-dark rounded-pill">Confirmer</button>
                   <input type="hidden" class="pro_id" name="pro_id" value="">

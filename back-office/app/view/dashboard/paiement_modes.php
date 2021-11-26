@@ -5,7 +5,7 @@
             <div class="card-header">
               <i class="fas fa-table"></i>
               Liste des modes de paiement
-              <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=paiement_modes_ajouter" role="button">Ajouter</a>
+              <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=paiement_modes_ajouter" role="button">Ajouter</a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -21,7 +21,7 @@
                     <tr>
                       <td><?= $paiement_mode['typ_pay_descr'] ?></td>
                       <td>
-                        <a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=paiement_modes_modifier&id=<?= $paiement_mode['typ_pay_id'] ?>">Modifier</a>
+                        <a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=paiement_modes_modifier&id=<?= $paiement_mode['typ_pay_id'] ?>">Modifier</a>
                         <br>
                         <a class="btn btn-outline-dark rounded-pill mt-3" href="#" data-typ_pay_descr="<?= $paiement_mode['typ_pay_descr'] ?>" data-typ_pay_id="<?= $paiement_mode['typ_pay_id'] ?>" data-toggle="modal" data-target="#supprimer_paiement_mode">Supprimer</a>
                       </td>
@@ -50,7 +50,7 @@
               </div>
               <div class="modal-body">Confirmez la suppression du mode de paiement</div>
               <div class="modal-footer">
-                <form action="index?module=bdd&action=supprimer_paiement_mode" method="post">
+                <form action="index.php?module=bdd&action=supprimer_paiement_mode" method="post">
                   <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
                   <button class="btn btn-outline-dark rounded-pill">Confirmer</button>
                   <input type="hidden" class="typ_pay_id" name="typ_pay_id" value="">

@@ -21,5 +21,5 @@
   if (file_exists($file)) {
     include ($file);
   } else {
-    header ("Location: index?module=404&action=index");
+    header ("Location: index.php?module=404&action=index");
   }

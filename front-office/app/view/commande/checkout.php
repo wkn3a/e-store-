@@ -14,7 +14,7 @@
                   <div class="panel-heading">
                     <h4 class="panel-title add_panel">Sesissez votre adresse</h4>
                   </div>
-                  <form method="post" action="index?module=commande&action=modif_add">
+                  <form method="post" action="index.php?module=commande&action=modif_add">
                     <div class="panel-body">
                       <address>
                         <strong><?= $account["cus_lastname"] ?> <?= $account["cus_firstname"] ?></strong><br>
@@ -40,12 +40,12 @@
                         <strong>Email : </strong><?= $account["cus_mail"] ?><br>
                       </address>
                       <input type="hidden" name="cus_id" value="<?= $account["cus_id"] ?>">
-                      <button class="btn btn-info pill" type="submit" formaction="index?module=commande&action=add_adresse">Ajouter une nouvelle adresse</button>
+                      <button class="btn btn-info pill" type="submit" formaction="index.php?module=commande&action=add_adresse">Ajouter une nouvelle adresse</button>
                     </div>
                   </form>
                 </div>
               </div>
-              <form  class="woocommerce-checkout" method="post" action="index?module=commande&action=checkoutBis">
+              <form  class="woocommerce-checkout" method="post" action="index.php?module=commande&action=checkoutBis">
                 <div class="row">
                   <div class="col-md-12">
                     <div>

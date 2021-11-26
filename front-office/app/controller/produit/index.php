@@ -60,7 +60,7 @@
       include ("../app/model/commande/ajout_un_produit_dup.php");
       $ajout_produit_dup = ajout_un_produit_dup($_GET['cus_id'], $_GET['pro_id']);
       
-      header ("Location: index?module=produit&action=index&page=" . $_GET['page'] . "&notif=ok_one_pro_dup");
+      header ("Location: index.php?module=produit&action=index&page=" . $_GET['page'] . "&notif=ok_one_pro_dup");
     }
     
     if ($verif_cad === false) {
@@ -68,12 +68,12 @@
       include ("../app/model/commande/ajout_un_produit.php");
       $ajout_produit = ajout_un_produit($_GET['cus_id'], $_GET['pro_id']); 
 
-      header ("Location: index?module=produit&action=index&page=" . $_GET['page'] . "&notif=ok_one_pro");
+      header ("Location: index.php?module=produit&action=index&page=" . $_GET['page'] . "&notif=ok_one_pro");
     }
     
   } else if (isset($_GET['cus_id']) && isset($_GET['pro_id']) && !$_SESSION['user']) {
     
-    header ("Location: index?module=utilisateur&action=login&notif=nok_nolog");
+    header ("Location: index.php?module=utilisateur&action=login&notif=nok_nolog");
   }
 
   define ("PAGE_TITLE", "Produits");

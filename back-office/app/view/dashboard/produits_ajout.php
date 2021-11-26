@@ -1,10 +1,10 @@
             <?php include("../app/view/layout/header.inc.php"); ?>
             <li class="breadcrumb-item">
-              <a class="text-dark" href="index?module=dashboard&action=produit">Produits</a>
+              <a class="text-dark" href="index.php?module=dashboard&action=produit">Produits</a>
             </li>
             <li class="breadcrumb-item active">Ajouter un produit</li>
           </ol>
-          <form action="index?module=bdd&action=ajouter_produit" method="post">
+          <form action="index.php?module=bdd&action=ajouter_produit" method="post">
             <div class="form-group">
               <label for="title">Nom du produit</label>
               <input type="text" class="form-control" id="title" name="pro_title" maxlength="255" required>

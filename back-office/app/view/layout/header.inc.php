@@ -40,7 +40,7 @@
           <div class="modal-body">Confirmez si vous voulez fermer la session</div>
           <div class="modal-footer">
             <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
-            <a class="btn btn-outline-dark rounded-pill" href="index?module=admin&action=logout">Confirmer</a>
+            <a class="btn btn-outline-dark rounded-pill" href="index.php?module=admin&action=logout">Confirmer</a>
           </div>
         </div>
       </div>
@@ -71,67 +71,67 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=produits">
+          <a class="nav-link" href="index.php?module=dashboard&action=produits">
             <i class="fas fa-fw fa-table"></i>
             <span>Produits</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=categories">
+          <a class="nav-link" href="index.php?module=dashboard&action=categories">
             <i class="fas fa-fw fa-table"></i>
             <span>Catégories</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=produit_categories">
+          <a class="nav-link" href="index.php?module=dashboard&action=produit_categories">
             <i class="fas fa-fw fa-table"></i>
             <span>Catégories par produit</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=clients">
+          <a class="nav-link" href="index.php?module=dashboard&action=clients">
             <i class="fas fa-fw fa-table"></i>
             <span>Clients</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=adresses">
+          <a class="nav-link" href="index.php?module=dashboard&action=adresses">
             <i class="fas fa-fw fa-table"></i>
             <span>Adresses</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=paniers">
+          <a class="nav-link" href="index.php?module=dashboard&action=paniers">
             <i class="fas fa-fw fa-table"></i>
             <span>Paniers</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=commandes">
+          <a class="nav-link" href="index.php?module=dashboard&action=commandes">
             <i class="fas fa-fw fa-table"></i>
             <span>Commandes</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=commandes_detail">
+          <a class="nav-link" href="index.php?module=dashboard&action=commandes_detail">
             <i class="fas fa-fw fa-table"></i>
             <span>Détail des commandes</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=paiements">
+          <a class="nav-link" href="index.php?module=dashboard&action=paiements">
             <i class="fas fa-fw fa-table"></i>
             <span>Paiements</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=paiement_modes">
+          <a class="nav-link" href="index.php?module=dashboard&action=paiement_modes">
             <i class="fas fa-fw fa-table"></i>
             <span>Modes de paiement</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index?module=dashboard&action=livraison_modes">
+          <a class="nav-link" href="index.php?module=dashboard&action=livraison_modes">
             <i class="fas fa-fw fa-table"></i>
             <span>Modes de livraison</span>
           </a>

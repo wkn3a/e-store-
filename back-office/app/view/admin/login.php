@@ -13,7 +13,7 @@
       <div class="card card-login mx-auto mt-5">
         <div class="card-header">Connection</div>
         <div class="card-body">
-          <form action="index?module=admin&action=login" method="post">
+          <form action="index.php?module=admin&action=login" method="post">
             <div class="form-group">
               <div class="form-label-group">
                 <input type="email" id="mail" class="form-control" name="cus_mail" required autofocus="autofocus">

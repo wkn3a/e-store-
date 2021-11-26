@@ -10,7 +10,7 @@
         <div class="container">
           <?php if($paniers) { ?>
           <div class="woocommerce">
-            <form class="woocommerce-cart-form" method="post" action="index?module=commande&action=shop-cart">
+            <form class="woocommerce-cart-form" method="post" action="index.php?module=commande&action=shop-cart">
               <table class="woocommerce-cart-table">
                 <thead>
                   <tr>
@@ -29,7 +29,7 @@
                       <img src="<?= $panier["pro_img_url"] ?>" style="height:100px;" alt="product-thumbnail">
                     </td>
                     <td class="product-name" data-title="Product">
-                      <a class="product-name" href="index?module=produit&action=shop-detail&id=<?= $panier["pro_id"] ?>"><?= $panier["pro_title"] ?></a>
+                      <a class="product-name" href="index.php?module=produit&action=shop-detail&id=<?= $panier["pro_id"] ?>"><?= $panier["pro_title"] ?></a>
                     </td>
                     <td class="product-price" data-title="Price"><?= $panier["pro_price"] ?></td>
                     <td class="product-quantity" data-title="Quantity">
@@ -39,7 +39,7 @@
                     </td>
                     <td class="product-subtotal" data-title="Total"><?= sprintf('%.2f',$panier['total']);?> €</td>
                     <td class="product-remove">
-                      <a class="remove" href="index?module=commande&action=shop-cart&cus_id=<?= $_SESSION["user"]["cus_id"]?>&pro_id=<?= $panier["pro_id"] ?>" aria-label="Remove this item">x</a>
+                      <a class="remove" href="index.php?module=commande&action=shop-cart&cus_id=<?= $_SESSION["user"]["cus_id"]?>&pro_id=<?= $panier["pro_id"] ?>" aria-label="Remove this item">x</a>
                     </td>
                   </tr>
                   <?php } ?>
@@ -52,7 +52,7 @@
                           <button type="submit" class="btn btn-brand-ghost pill text-uppercase bouton-update">Mettre a jour le panier</button>
                         </div>
                         <div class="form-group update-cart">
-                          <a href="index?module=commande&action=panier_suppr" class="confirm btn btn-danger pill text-uppercase bouton-update">Vider le panier</a>
+                          <a href="index.php?module=commande&action=panier_suppr" class="confirm btn btn-danger pill text-uppercase bouton-update">Vider le panier</a>
                         </div>
                       </div>
                     </td>
@@ -79,12 +79,12 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="proceed-to-checkout">
-                        <a href="index?module=produit&action=index" class="btn btn-brand pill commande text-uppercase">Continuez vos achats</a>
+                        <a href="index.php?module=produit&action=index" class="btn btn-brand pill commande text-uppercase">Continuez vos achats</a>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="proceed-to-checkout bouton-commander">
-                        <a class="btn btn-brand pill text-uppercase commande" href="index?module=commande&action=checkout">Commander</a>
+                        <a class="btn btn-brand pill text-uppercase commande" href="index.php?module=commande&action=checkout">Commander</a>
                       </div>
                     </div>
                   </div>
@@ -95,7 +95,7 @@
           <?php } else { ?>
           <div class="woocommerce text-center">
             <h3 class="heading-style-2">Votre panier est vide</h3>
-            <p><a class="btn btn-brand pill" href="index?module=accueil&action=index" role="button">Continuez vos achats</a></p>
+            <p><a class="btn btn-brand pill" href="index.php?module=accueil&action=index" role="button">Continuez vos achats</a></p>
           </div>
           <?php } ?>
         </div>

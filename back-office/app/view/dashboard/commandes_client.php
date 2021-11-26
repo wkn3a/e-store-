@@ -1,6 +1,6 @@
             <?php include("../app/view/layout/header.inc.php"); ?>
             <li class="breadcrumb-item active">
-              <a class="text-dark" href="index?module=dashboard&action=commandes">Commandes</a>
+              <a class="text-dark" href="index.php?module=dashboard&action=commandes">Commandes</a>
             </li>
             <li class="breadcrumb-item active">Commande d'un client</li>
           </ol>
@@ -66,7 +66,7 @@
               </div>
               <div class="modal-body">Confirmez la suppression de la commande</div>
               <div class="modal-footer">
-                <form action="index?module=bdd&action=supprimer_commande" method="post">
+                <form action="index.php?module=bdd&action=supprimer_commande" method="post">
                   <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
                   <button class="btn btn-outline-dark rounded-pill">Confirmer</button>
                   <input type="hidden" class="ord_id" name="ord_id" value="">

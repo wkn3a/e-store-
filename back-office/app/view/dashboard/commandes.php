@@ -26,14 +26,14 @@
                     <?php foreach ($commandes as $commande) { ?>
                     <tr>
                       <td><?= $commande['ord_id'] ?></td>
-                      <td><a class="text-dark" href="index?module=dashboard&action=commandes&cus_id=<?= $commande['cus_id'] ?>"><u><?= $commande['cus_mail'] ?></u></a></td>
+                      <td><a class="text-dark" href="index.php?module=dashboard&action=commandes&cus_id=<?= $commande['cus_id'] ?>"><u><?= $commande['cus_mail'] ?></u></a></td>
                       <td><?= $commande['ord_date'] ?></td>
                       <td><?= $commande['ord_total'] ?> &euro;</td>
                       <td><?= $commande['ord_qt'] ?></td>
                       <td><?= $commande['delivery_address1'] ?><br><?= $commande['delivery_address2'] ?><br><?= $commande['delivery_zipcode'] ?><br><?= $commande['delivery_city'] ?></td>
                       <td><?= $commande['billing_address1'] ?><br><?= $commande['billing_address2'] ?><br><?= $commande['billing_zipcode'] ?><br><?= $commande['billing_city'] ?></td>
                       <td><?= $commande['typ_log_descr'] ?></td>
-                      <td><a class="btn btn-outline-dark rounded-pill" href="index?module=dashboard&action=commande_detail&ord_id=<?= $commande['ord_id'] ?>">Détail</a><a class="btn btn-outline-dark rounded-pill mt-3" href="#" data-ord_id="<?= $commande['ord_id'] ?>" data-toggle="modal" data-target="#supprimer_commande">Supprimer</a></td>
+                      <td><a class="btn btn-outline-dark rounded-pill" href="index.php?module=dashboard&action=commande_detail&ord_id=<?= $commande['ord_id'] ?>">Détail</a><a class="btn btn-outline-dark rounded-pill mt-3" href="#" data-ord_id="<?= $commande['ord_id'] ?>" data-toggle="modal" data-target="#supprimer_commande">Supprimer</a></td>
                     </tr>
                     <?php } ?>
                   </tbody>
@@ -66,7 +66,7 @@
               </div>
               <div class="modal-body">Confirmez la suppression de la commande</div>
               <div class="modal-footer">
-                <form action="index?module=bdd&action=supprimer_commande" method="post">
+                <form action="index.php?module=bdd&action=supprimer_commande" method="post">
                   <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
                   <button class="btn btn-outline-dark rounded-pill">Confirmer</button>
                   <input type="hidden" class="ord_id" name="ord_id" value="">

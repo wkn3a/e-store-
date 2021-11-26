@@ -4,10 +4,10 @@
   define ("APP_CHARSET", "utf-8");
   
   define ("DB_HOST", "localhost");
-  define ("DB_NAME", "afpa0519_store_2");
+  define ("DB_NAME", "e_store_afpa");
   define ("DB_CHARSET", "utf8");
   define ("DB_USER", "root");
-  define ("DB_PASSWORD", "lHMQwJNVXN5BQoRt");
+  define ("DB_PASSWORD", "");
   
   define ("SITE_NAME", "WERP Store");
   define ("SITE_COPYRIGHT", "Copyright WERP Team © 2019");

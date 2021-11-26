@@ -38,7 +38,7 @@
               <figure class="item">
                 <div class="product product-style-1">
                   <div class="img-wrapper">
-                    <a href="index?module=produit&action=shop-detail&id=<?= $produit["pro_id"]?>">
+                    <a href="index.php?module=produit&action=shop-detail&id=<?= $produit["pro_id"]?>">
                       <img class="img-responsive" src="<?= $produit["pro_img_url"] ?>" alt="product thumbnail">
                     </a>
                     <div class="product-control-wrapper bottom-right">
@@ -49,7 +49,7 @@
                       </div>
                       <?php if (isset($_SESSION['user'])) { ?> 
                       <div class="wrapper-control-item item-add-cart">
-                        <a class="animate-icon-cart" href="index?module=produit&action=index&cus_id=<?= $_SESSION['user']['cus_id'] ?>&pro_id=<?= $produit["pro_id"] ?>&page=<?= $page ?>">
+                        <a class="animate-icon-cart" href="index.php?module=produit&action=index&cus_id=<?= $_SESSION['user']['cus_id'] ?>&pro_id=<?= $produit["pro_id"] ?>&page=<?= $page ?>">
                           <span class="lnr lnr-cart"></span>
                         </a>
                         <svg x="0px" y="0px" width="36px" height="32px" viewbox="0 0 36 32">
@@ -61,7 +61,7 @@
                   </div>
                   <div class="desc text-center caption">
                     <h3>
-                      <a class="product-name" href="index?module=produit&action=shop-detail&id=<?= $produit["pro_id"]?>"><?= $produit["pro_title"] ?></a>
+                      <a class="product-name" href="index.php?module=produit&action=shop-detail&id=<?= $produit["pro_id"]?>"><?= $produit["pro_title"] ?></a>
                     </h3>
                     <span class="price"><?= $produit["pro_price"] ?> &euro;</span>
                   </div>
@@ -75,14 +75,14 @@
                   <ul class="pagination pagination-style-1">
                     <?php if (isset($_GET["id"])) { ?>
                     <li>
-                      <a class="prev page-numbers" href="index?module=produit&action=index&id=<?= $produit["cat_id"] ?>&page=<?= $page - 1 ?>">
+                      <a class="prev page-numbers" href="index.php?module=produit&action=index&id=<?= $produit["cat_id"] ?>&page=<?= $page - 1 ?>">
                         <i class="fa fa-angle-left"></i>
                       </a>
                     </li>
                     <?php for ($i=1; $i <=$pages; $i++) {
                       if ($i !=$page) { ?>
                     <li>
-                      <a class="page-numbers" href="index?module=produit&action=index&id=<?= $produit["cat_id"] ?>&page=<?= $i ?>"><?= $i ?></a>
+                      <a class="page-numbers" href="index.php?module=produit&action=index&id=<?= $produit["cat_id"] ?>&page=<?= $i ?>"><?= $i ?></a>
                     </li>
                     <?php } else { ?>
                     <li>
@@ -90,20 +90,20 @@
                     </li>
                     <?php } } ?>
                     <li>
-                      <a class="next page-numbers" href="index?module=produit&action=index&id=<?= $produit["cat_id"] ?>&page=<?= $page + 1 ?>">
+                      <a class="next page-numbers" href="index.php?module=produit&action=index&id=<?= $produit["cat_id"] ?>&page=<?= $page + 1 ?>">
                         <i class="fa fa-angle-right"></i>
                       </a>
                     </li>
                     <?php } else { ?>
                     <li>
-                      <a class="prev page-numbers" href="index?module=produit&action=index&page=<?= $page - 1 ?>">
+                      <a class="prev page-numbers" href="index.php?module=produit&action=index&page=<?= $page - 1 ?>">
                         <i class="fa fa-angle-left"></i>
                       </a>
                     </li>
                     <?php for ($i=1; $i <=$pages; $i++) {
                       if ($i !=$page) { ?>
                     <li>
-                      <a class="page-numbers" href="index?module=produit&action=index&page=<?= $i ?>"><?= $i ?></a>
+                      <a class="page-numbers" href="index.php?module=produit&action=index&page=<?= $i ?>"><?= $i ?></a>
                     </li>
                     <?php } else { ?>
                     <li>
@@ -111,7 +111,7 @@
                     </li>
                     <?php } } ?>
                     <li>
-                      <a class="next page-numbers" href="index?module=produit&action=index&page=<?= $page + 1 ?>">
+                      <a class="next page-numbers" href="index.php?module=produit&action=index&page=<?= $page + 1 ?>">
                         <i class="fa fa-angle-right"></i>
                       </a>
                     </li>
@@ -156,7 +156,7 @@
                       </div>
                     </div>
                     <div class="footer-desc"><?php if (isset($_SESSION['user'])) { ?>
-                      <form class="cart" name="qt" method="post" action="index?module=produit&action=shop-detail">
+                      <form class="cart" name="qt" method="post" action="index.php?module=produit&action=shop-detail">
                         <div class="quantity buttons-added">
                           <input class="minus" value="-" type="button" id="moins" >
                           <input class="input-text qty text" id="count" step="1" min="1" name="cad_qt"  value="1" title="Qty" type="number" >
@@ -171,8 +171,8 @@
                         <div>
                           <p class="message">Oups, il vous faut un compte pour pouvoir acheter en ligne !</p>
                           <div>
-                            <a class="btn btn-info margin_modal pill" href="index?module=utilisateur&action=register" role="button">S'inscrire maintenant</a>
-                            <a class="btn btn-brand pill" href="index?module=utilisateur&action=login" role="button">Se connecter et commencer ses courses</a>
+                            <a class="btn btn-info margin_modal pill" href="index.php?module=utilisateur&action=register" role="button">S'inscrire maintenant</a>
+                            <a class="btn btn-brand pill" href="index.php?module=utilisateur&action=login" role="button">Se connecter et commencer ses courses</a>
                           </div>
                         </div>
                         <?php } ?>

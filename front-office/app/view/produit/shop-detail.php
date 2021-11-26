@@ -35,7 +35,7 @@
                       if (isset($_SESSION['user'])) { ?>
                     <div class="footer-desc">
                       
-                      <form name="qt" class="cart" method="post" action="index?module=produit&action=shop-detail">
+                      <form name="qt" class="cart" method="post" action="index.php?module=produit&action=shop-detail">
                         <div class="quantity buttons-added">
                           <input class="minus" value="-" type="button" id="moins">
                           <input class="input-text qty text" step="1" min="1" name="cad_qt" value="<?= ($qt >= 1 )? $qt['cad_qt']: '0'; ?>" id="count" title="Qty" type="number">
@@ -55,7 +55,7 @@
                   <div class="product-meta">
                     <p class="posted-in">Catégories :
                       <?php foreach ($categories_produit as $categorie_produit) { ?>
-                      <a href="index?module=produit&action=index&id=<?= $categorie_produit["cat_id"] ?>" rel="tag"><?= $categorie_produit["cat_descr"] ?></a>&nbsp;
+                      <a href="index.php?module=produit&action=index&id=<?= $categorie_produit["cat_id"] ?>" rel="tag"><?= $categorie_produit["cat_descr"] ?></a>&nbsp;
                       <?php } ?>
                     </p>
                   </div>
@@ -63,8 +63,8 @@
                     if (!isset($_SESSION["user"])) { ?>
                     <div>
                       <p class="message">Oups, il vous faut un compte pour pouvoir acheter en ligne !</p>
-                      <a class="btn btn-info pill" href="index?module=utilisateur&action=register" role="button">S'inscrire maintenant</a>
-                      <a class="btn btn-brand pill" href="index?module=utilisateur&action=login" role="button">Se connecter et commencer ses courses</a>
+                      <a class="btn btn-info pill" href="index.php?module=utilisateur&action=register" role="button">S'inscrire maintenant</a>
+                      <a class="btn btn-brand pill" href="index.php?module=utilisateur&action=login" role="button">Se connecter et commencer ses courses</a>
                     </div>
                   <?php  } ?>
                 </div>

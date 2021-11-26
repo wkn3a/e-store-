@@ -2,4 +2,4 @@
 
   unset($_SESSION["user"]);
   
-  header ("Location: index?notif=ok");
+  header ("Location: index.php?notif=ok");

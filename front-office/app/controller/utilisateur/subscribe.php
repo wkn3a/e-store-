@@ -7,9 +7,9 @@
     
     $_SESSION["user"]["cus_subscriber"] = 1;
     
-    header ("Location: index?notif=ok");
+    header ("Location: index.php?notif=ok");
     
   } else {
     
-    header ("Location: index?&notif=nok");
+    header ("Location: index.php&notif=nok");
   }

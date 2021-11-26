@@ -57,7 +57,7 @@
               </div>
               <div class="modal-body">Confirmez la suppression du compte</div>
               <div class="modal-footer">
-                <form action="index?module=bdd&action=supprimer_client" method="post">
+                <form action="index.php?module=bdd&action=supprimer_client" method="post">
                   <button class="btn btn-outline-dark rounded-pill" type="button" data-dismiss="modal">Annuler</button>
                   <button class="btn btn-outline-dark rounded-pill">Confirmer</button>
                   <input type="hidden" class="cus_id" name="cus_id" value="">

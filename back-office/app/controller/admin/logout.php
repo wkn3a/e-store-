@@ -1,4 +1,4 @@
 <?php
 
   unset ($_SESSION["user"]);
-  header ("Location: index?module=admin&action=login&notif=ok");
+  header ("Location: index.php?module=admin&action=login&notif=ok");

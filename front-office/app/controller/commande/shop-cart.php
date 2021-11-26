@@ -4,7 +4,7 @@
     
     if (!isset($_SESSION["user"])) {
 
-        header ("Location: index?module=utilisateur&action=login");
+        header ("Location: index.php?module=utilisateur&action=login");
       }
 
     if (isset($_SESSION["user"])) {
@@ -30,7 +30,7 @@
       include ("../app/model/commande/produit_supp.php");
       $supp = produit_supp($_GET['cus_id'], $_GET['pro_id']);
 
-      header ("Location: index?module=commande&action=shop-cart&notif=ok");
+      header ("Location: index.php?module=commande&action=shop-cart&notif=ok");
     }
     
     define ("PAGE_TITLE", "Mon Panier");
@@ -53,10 +53,10 @@
     
     if ($modif_produits == false) {
       
-      header ("Location: index?module=commande&action=shop-cart&notif=nok");
+      header ("Location: index.php?module=commande&action=shop-cart&notif=nok");
       
     } else {
       
-      header ("Location: index?module=commande&action=shop-cart&notif=ok");
+      header ("Location: index.php?module=commande&action=shop-cart&notif=ok");
     }
   }

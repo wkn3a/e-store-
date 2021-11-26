@@ -21,7 +21,7 @@
       
     } else {
       
-      header ("Location: index?module=404&action=index");
+      header ("Location: index.php?module=404&action=index");
     }
     
   } else if (isset($_SESSION["user"]["cus_id"] )) {
@@ -35,7 +35,7 @@
       include ("../app/model/commande/modif_produits.php");
       $modif_produits = modif_produits($_POST['cus_id'], $_POST['pro_id'], $_POST['cad_qt']);
       
-      header ("Location: index?module=produit&action=index&notif=ok_modif");
+      header ("Location: index.php?module=produit&action=index&notif=ok_modif");
     }
     
     if (isset($_POST['cus_id']) && !$verif_cad) {
@@ -43,9 +43,9 @@
       include ("../app/model/commande/ajout_produits.php");
       $ajout_produit = ajout_produits($_POST);
 
-      header ("Location: index?module=produit&action=index&notif=ok_ajout");
+      header ("Location: index.php?module=produit&action=index&notif=ok_ajout");
     }
   } else {
     
-    header ("Location: index?module=utilisateur&action=register");
+    header ("Location: index.php?module=utilisateur&action=register");
   }

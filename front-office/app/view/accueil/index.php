@@ -37,7 +37,7 @@
               <div class="row">
                 <?php foreach ($categories as $categorie) { ?>
                 <div class="col-sm-4">
-                  <a href="index?module=produit&action=index&id=<?= $categorie["cat_id"] ?>">
+                  <a href="index.php?module=produit&action=index&id=<?= $categorie["cat_id"] ?>">
                     <figure class="product-category-item">
                       <div class="thumbnail">
                         <img src="<?= $categorie["cat_img_url"] ?>" alt="">
@@ -50,7 +50,7 @@
                 </div>
                 <?php } ?>
                 <div class="col-sm-4">
-                  <a href="index?module=produit&action=index">
+                  <a href="index.php?module=produit&action=index">
                     <figure class="product-category-item">
                       <div class="thumbnail">
                         <img src="https://static-cms.carrefour.fr/sites/default/files/2019-05/tous-rayons-icon.png?itok=OFJWhbkj" alt="img">

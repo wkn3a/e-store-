@@ -1,10 +1,10 @@
             <?php include("../app/view/layout/header.inc.php"); ?>
             <li class="breadcrumb-item">
-              <a class="text-dark" href="index?module=dashboard&action=livraison_modes">Modes de livraison</a>
+              <a class="text-dark" href="index.php?module=dashboard&action=livraison_modes">Modes de livraison</a>
             </li>
             <li class="breadcrumb-item active">Ajouter un mode de livraison</li>
           </ol>
-          <form action="index?module=bdd&action=ajouter_livraison_mode" method="post">
+          <form action="index.php?module=bdd&action=ajouter_livraison_mode" method="post">
             <div class="form-group">
               <label for="title">Mode de livraison</label>
               <input type="text" class="form-control" id="title" name="typ_log_descr" maxlength="255" required>

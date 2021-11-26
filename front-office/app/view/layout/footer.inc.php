@@ -29,7 +29,7 @@
                 <?php foreach ($categories as $categorie) { ?>
                 <ul>
                   <li>
-                    <a href="index?module=produit&action=index&id=<?= $categorie["cat_id"] ?>"><?= $categorie["cat_descr"] ?></a>
+                    <a href="index.php?module=produit&action=index&id=<?= $categorie["cat_id"] ?>"><?= $categorie["cat_descr"] ?></a>
                   </li>
                 </ul>
               <?php } ?>
@@ -38,7 +38,7 @@
                 <h4 class="h4 heading">Informations</h4>
                 <ul>
                   <li>
-                    <a href="index?module=accueil&action=about">A propos de nous</a>
+                    <a href="index.php?module=accueil&action=about">A propos de nous</a>
                   </li>
                 </ul>
               </div>
@@ -47,14 +47,14 @@
                 <ul>
                   <?php if (!isset($_SESSION["user"])) { ?>
                   <li>
-                    <a href="index?module=utilisateur&action=login">Se connecter</a>
+                    <a href="index.php?module=utilisateur&action=login">Se connecter</a>
                   </li>
                   <li>
-                    <a href="index?module=utilisateur&action=register">S'enregistrer</a>
+                    <a href="index.php?module=utilisateur&action=register">S'enregistrer</a>
                   </li>
                   <?php } else { ?>
                   <li>
-                    <a href="index?module=utilisateur&action=account">Profil</a>
+                    <a href="index.php?module=utilisateur&action=account">Profil</a>
                   </li>     
                   <?php if ($_SESSION["user"]["cus_id"] >= 1 && $_SESSION["user"]["cus_id"] <= 4) { ?>
                   <li>
@@ -62,7 +62,7 @@
                   </li>
                   <?php } ?>
                   <li>
-                    <a href="index?module=utilisateur&action=logout">Se déconnecter</a>
+                    <a href="index.php?module=utilisateur&action=logout">Se déconnecter</a>
                   </li>
                   <?php } ?>          
                 </ul>
@@ -72,7 +72,7 @@
             <div class="widget-footer widget-newsletter-footer col-last col-small">
               <h4 class="h4 heading">Newsletter</h4>
               <?php if ($_SESSION["user"]["cus_subscriber"] == 0) { ?>
-              <form class="organic-form form-inline btn-add-on circle border" action="index?module=utilisateur&action=subscribe" method="post">
+              <form class="organic-form form-inline btn-add-on circle border" action="index.php?module=utilisateur&action=subscribe" method="post">
                 <div class="form-group">
                   <p>Abonnez-vous pour bons plans quotidiens !</p>
                   <button class="btn btn-brand circle" type="submit">
@@ -81,7 +81,7 @@
                 </div>
               </form>
               <?php } else { ?>
-              <form class="organic-form form-inline btn-add-on circle border" action="index?module=utilisateur&action=unsubscribe" method="post">
+              <form class="organic-form form-inline btn-add-on circle border" action="index.php?module=utilisateur&action=unsubscribe" method="post">
                 <div class="form-group">
                   <p>Désabonnez-vous (bye bye spam mail).</p>
                   <button class="btn btn-brand circle" type="submit">

@@ -18,7 +18,7 @@
             <div class="row">
               <div>
                 <h3>Mon profil</h3>
-                <form method="post" action="index?module=utilisateur&action=account">
+                <form method="post" action="index.php?module=utilisateur&action=account">
                   <div class="form-group organic-form-2">
                     <label>Nom</label>
                     <input class="form-control" type="text" value="<?= $account["cus_lastname"] ?>" name="cus_lastname">
@@ -84,7 +84,7 @@
               </div>
               <div>
                 <h3>Ajouter une adresse</h3>
-                <form action="index?module=utilisateur&action=ajout_address" method="post">
+                <form action="index.php?module=utilisateur&action=ajout_address" method="post">
                   <div class="form-group organic-form-2">
                     <label>Adresse (*)</label>
                     <input class="form-control" type="text" name="add_address1" required>
@@ -148,10 +148,10 @@
                       </div>
                     </div>
                     <div class="footer-desc">
-                      <form class="cart" method="post" action="index?module=utilisateur&action=account_delete">
+                      <form class="cart" method="post" action="index.php?module=utilisateur&action=account_delete">
                         <div class="group-btn-control-wrapper">
                           <button class="btn btn-danger text-uppercase modal_button">Oui</button>
-                          <a class="btn btn-success text-uppercase modal_button" href="index?module=utilisateur&action=account" role="button">Non</a>
+                          <a class="btn btn-success text-uppercase modal_button" href="index.php?module=utilisateur&action=account" role="button">Non</a>
                         </div>
                         <input class="id" type="hidden" name="cus_id" value="">
                       </form>

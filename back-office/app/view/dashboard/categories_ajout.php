@@ -1,10 +1,10 @@
             <?php include("../app/view/layout/header.inc.php"); ?>
             <li class="breadcrumb-item">
-              <a class="text-dark" href="index?module=dashboard&action=categories">Catégories</a>
+              <a class="text-dark" href="index.php?module=dashboard&action=categories">Catégories</a>
             </li>
             <li class="breadcrumb-item active">Ajouter une catégorie</li>
           </ol>
-          <form action="index?module=bdd&action=ajouter_categorie" method="post">
+          <form action="index.php?module=bdd&action=ajouter_categorie" method="post">
             <div class="form-group">
               <label for="title">Nom de la catégorie</label>
               <input type="text" class="form-control" id="title" name="cat_descr" maxlength="255" required>

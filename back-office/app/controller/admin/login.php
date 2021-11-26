@@ -12,7 +12,7 @@
     $admin = login($_POST["cus_mail"], md5($_POST["cus_password"]));
     if ($admin) {
       $_SESSION["user"] = $admin;
-      header ("Location: index?notif=ok");
+      header ("Location: index.php?notif=ok");
     } else {
       die ("Pas d'bol toto, pas admin !");
     }

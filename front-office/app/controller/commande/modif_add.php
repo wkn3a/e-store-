@@ -6,11 +6,11 @@ if(isset($_POST['add_address1'])){
     
     if ($account_update == false) {
       
-      header ("Location: index?module=commande&action=checkout&notif=nok");
+      header ("Location: index.php?module=commande&action=checkout&notif=nok");
       
     } else {
       
-      header ("Location: index?module=commande&action=checkout&notif=ok");
+      header ("Location: index.php?module=commande&action=checkout&notif=ok");
     }
   }
  

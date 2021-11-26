@@ -19,10 +19,10 @@
     
     if ($register && $cus_id && $register_address) {
       
-      header ("Location: index?module=utilisateur&action=login&notif=regok");
+      header ("Location: index.php?module=utilisateur&action=login&notif=regok");
       
     } else {
       
-      header ("Location: index?module=utilisateur&action=register&notif=regnok");
+      header ("Location: index.php?module=utilisateur&action=register&notif=regnok");
     }
   }
